@@ -30,7 +30,24 @@ namespace pryAstudilloSp1
             txtContraseña.Text = "";
 
             cmbMódulo.SelectedIndex = -1;
-            
+
         }
-    }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtContraseña.Enabled = false;
+            }
+            else
+            {
+                txtContraseña.Enabled = true;
+
+            }
+
+            
+
+        }
+    }   
+
 }

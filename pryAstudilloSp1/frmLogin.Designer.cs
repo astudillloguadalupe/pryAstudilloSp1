@@ -96,6 +96,7 @@
             // 
             // txtContraseña
             // 
+            txtContraseña.Enabled = false;
             txtContraseña.Location = new Point(150, 99);
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
@@ -110,6 +111,7 @@
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(100, 23);
             txtUsuario.TabIndex = 7;
+            txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // frmLogin
             // 
