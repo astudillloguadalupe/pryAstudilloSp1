@@ -73,6 +73,7 @@
             btnCancelar.TabIndex = 3;
             btnCancelar.Text = "&Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnAceptar
             // 
@@ -82,10 +83,12 @@
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = "&Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // cmbMódulo
             // 
             cmbMódulo.FormattingEnabled = true;
+            cmbMódulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
             cmbMódulo.Location = new Point(150, 162);
             cmbMódulo.Name = "cmbMódulo";
             cmbMódulo.Size = new Size(121, 23);
@@ -94,13 +97,16 @@
             // txtContraseña
             // 
             txtContraseña.Location = new Point(150, 99);
+            txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
             txtContraseña.Size = new Size(100, 23);
             txtContraseña.TabIndex = 6;
             // 
             // txtUsuario
             // 
             txtUsuario.Location = new Point(150, 48);
+            txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(100, 23);
             txtUsuario.TabIndex = 7;

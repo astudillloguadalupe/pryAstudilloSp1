@@ -16,5 +16,21 @@ namespace pryAstudilloSp1
         {
             InitializeComponent();
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            frmInicio frmInicio = new frmInicio();
+            frmInicio.ShowDialog();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
+
+            txtContraseña.Text = "";
+
+            cmbMódulo.SelectedIndex = -1;
+            
+        }
     }
 }
