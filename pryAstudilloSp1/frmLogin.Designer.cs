@@ -67,7 +67,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(343, 98);
+            btnCancelar.Location = new Point(233, 239);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(343, 52);
+            btnAceptar.Location = new Point(88, 239);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(75, 23);
             btnAceptar.TabIndex = 4;
@@ -87,11 +87,12 @@
             // 
             // cmbMódulo
             // 
+            cmbMódulo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbMódulo.FormattingEnabled = true;
             cmbMódulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
             cmbMódulo.Location = new Point(150, 162);
             cmbMódulo.Name = "cmbMódulo";
-            cmbMódulo.Size = new Size(121, 23);
+            cmbMódulo.Size = new Size(158, 23);
             cmbMódulo.TabIndex = 5;
             // 
             // txtContraseña
@@ -101,7 +102,7 @@
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '*';
-            txtContraseña.Size = new Size(100, 23);
+            txtContraseña.Size = new Size(158, 23);
             txtContraseña.TabIndex = 6;
             // 
             // txtUsuario
@@ -109,7 +110,7 @@
             txtUsuario.Location = new Point(150, 48);
             txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.Size = new Size(158, 23);
             txtUsuario.TabIndex = 7;
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
@@ -117,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 274);
+            ClientSize = new Size(389, 307);
             Controls.Add(txtUsuario);
             Controls.Add(txtContraseña);
             Controls.Add(cmbMódulo);
