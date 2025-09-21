@@ -37,6 +37,7 @@ namespace pryAstudilloSp1
             if (txtUsuario.Text == "")
             {
                 txtContraseña.Enabled = false;
+
             }
             else
             {
@@ -83,12 +84,29 @@ namespace pryAstudilloSp1
             else
             {
                 intentosFallidos++;
-                MessageBox.Show("Datos incorrectos. Acceso Denegado.");
+                MessageBox.Show("Usuario y/o contraseña incorrectos para el modulo seleccionado");
 
-                if (intentosFallidos >= 2)
+                if (intentosFallidos == 3)
                 {
                     this.Close();
                 }
+            }
+        }
+
+        private void cmbMódulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                cmbMódulo.Enabled = false;   
+            }
+            else
+            {
+                cmbMódulo.Enabled = true;    
             }
         }
     }

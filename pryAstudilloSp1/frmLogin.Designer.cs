@@ -70,7 +70,7 @@
             btnCancelar.Location = new Point(233, 239);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
-            btnCancelar.TabIndex = 3;
+            btnCancelar.TabIndex = 4;
             btnCancelar.Text = "&Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -80,7 +80,7 @@
             btnAceptar.Location = new Point(88, 239);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(75, 23);
-            btnAceptar.TabIndex = 4;
+            btnAceptar.TabIndex = 3;
             btnAceptar.Text = "&Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
@@ -93,7 +93,8 @@
             cmbMódulo.Location = new Point(150, 162);
             cmbMódulo.Name = "cmbMódulo";
             cmbMódulo.Size = new Size(158, 23);
-            cmbMódulo.TabIndex = 5;
+            cmbMódulo.TabIndex = 2;
+            cmbMódulo.SelectedIndexChanged += cmbMódulo_SelectedIndexChanged;
             // 
             // txtContraseña
             // 
@@ -103,7 +104,8 @@
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '*';
             txtContraseña.Size = new Size(158, 23);
-            txtContraseña.TabIndex = 6;
+            txtContraseña.TabIndex = 1;
+            txtContraseña.TextChanged += txtContraseña_TextChanged;
             // 
             // txtUsuario
             // 
@@ -111,7 +113,7 @@
             txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(158, 23);
-            txtUsuario.TabIndex = 7;
+            txtUsuario.TabIndex = 0;
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // frmLogin
@@ -127,8 +129,11 @@
             Controls.Add(lblMódulo);
             Controls.Add(l);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "frmLogin";
-            Text = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }

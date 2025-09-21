@@ -73,7 +73,9 @@
             Controls.Add(lblLogo);
             Controls.Add(btnIngresar);
             Controls.Add(lblBienvenido);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "frmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             ResumeLayout(false);
             PerformLayout();
         }
